@@ -1,0 +1,26 @@
+.itemSlider_link {
+  color: rgba(0,0,0,.4);
+  font-size: 16px;
+  text-decoration: none;
+}
+.itemSlider_link:hover{
+  color: rgba(0,0,0,.4);
+   cursor: pointer;
+}
+
+
+.bcumbSliderItem .b_item_home {
+  flex: 0 0 auto;
+  margin-top: -2px;
+}
+ .bcumbSlider .bcumbSliderItem {
+  width: auto !important;
+}
+.brandName{
+  color: rgba(0,0,0,.749); text-decoration: none;
+}
+.brandName:hover{
+  color: rgba(0,0,0,.749);
+}
+
+ 

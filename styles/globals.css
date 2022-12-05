@@ -1,0 +1,109 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+.img-slider .img-1-type img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-1-type img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.img-1-type {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.img-slider .swiper-container-horizontal>.swiper-pagination-bullets, .img-slider .swiper-pagination-custom, .img-slider .swiper-pagination-fraction {
+  bottom: 0 !important;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: -webkit-fit-content!important;
+  width: -moz-fit-content!important;
+  width: fit-content!important;
+  text-align: center;
+  background-color: rgba(0,0,0,.149);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  padding: 0!important;
+  height: 25px!important;
+  margin-top: 0;
+}
+
+.img-slider .swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 5px 6px!important;
+}
+
+.img-slider .swiper-pagination-bullet-active {
+  background: #fff;
+  opacity: 1 !important;
+}
+
+.img-slider .swiper-pagination-bullet {
+  background: #fff;
+  opacity: .5;
+  width: 7px;
+  height: 7px;
+}
+
+
+
+
+
+
+
+@media (max-width: 526px){
+.img-slider .img-1-type img {
+    width: 90vw!important;
+    object-fit: cover;
+    height: 100vw!important;
+}
+}
+
+@media (min-width: 526px){
+.img-slider .swiper-pagination-bullets, .img-slider .swiper-pagination-custom, .img-slider .swiper-pagination-fraction {
+    /*bottom: -30px!important;*/
+    bottom: 0 !important; 
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: -webkit-fit-content!important;
+    width: -moz-fit-content!important;
+    width: fit-content!important;
+    text-align: center;
+    background-color: rgba(0,0,0,.149);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 0!important;
+    height: 25px!important;
+ }
+}
+
+@media (min-width: 526px){
+.img-slider .swiper-container {
+    height: 100%!important;
+    position: static;
+}
+}
