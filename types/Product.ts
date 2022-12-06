@@ -6,7 +6,7 @@ export interface Product {
     instalment?:       string;
     sliderImage?:      SliderImage[];
     description?:      string;
-    tag?:              Tag[];
+    tag:              Tag[];
     seller?:           Seller;
 }
 
