@@ -2,6 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
+  compiler: {
+    // Enables the styled-components SWC transform
+    styledComponents: true
+  },
   webpack: (config) => {
     const rules = config.module.rules
       .find((rule) => typeof rule.oneOf === "object")

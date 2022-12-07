@@ -1,11 +1,8 @@
-import http from "./httpCommon";
-import { Product } from "../types/Product";
- 
-const getProduct = () => {
-  return http.get<Array<Product>>("/api/Item/1");
-};
+const baseUrl = "https://3d8efbd1-e448-48a4-9b31-a2add5eccd62.mock.pstmn.io/";
 
-
+const getProduct = async() =>{
+  return fetch(baseUrl+"/api/Item/1");
+}
 
 const ProductService = {
   getProduct

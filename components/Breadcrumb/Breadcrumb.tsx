@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ChangeEvent } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FiHome, FiChevronRight } from "react-icons/fi";
 

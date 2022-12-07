@@ -1,4 +1,4 @@
-import React, { useState, useEffect, ChangeEvent } from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 import { RootState } from "../../stores";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,9 +8,9 @@ import Image from "react-bootstrap/Image";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
-
-const Slider = () => {
-  const responseData = useSelector((state: RootState) => state.responseData);
+  
+const Slider = ()  => {
+   const items = useSelector((state: RootState) => state.responseData);
 
   return (
     <Swiper
@@ -20,9 +20,9 @@ const Slider = () => {
       centeredSlides={true}
       autoHeight={true}
     >
-      {responseData.sliderImage?.map((item, key) => (
+      {items.sliderImage?.map((item, key) => (
         <SwiperSlide key={key} className={"img-1-type"}>
-          <Image src={item.imageUrl} alt={responseData.itemName}></Image>
+          <Image src={item.imageUrl} alt={items.itemName}></Image>
         </SwiperSlide>
       ))}
     </Swiper>

@@ -1,13 +1,13 @@
 export interface Product {
-    id?:               string;
-    itemName?:         string;
-    price?:            number;
-    currencyTypeName?: string;
-    instalment?:       string;
-    sliderImage?:      SliderImage[];
-    description?:      string;
+    id:               string;
+    itemName:         string;
+    price:            number;
+    currencyTypeName: string;
+    instalment:       string;
+    sliderImage:      SliderImage[];
+    description:      string;
     tag:              Tag[];
-    seller?:           Seller;
+    seller:           Seller;
 }
 
 export interface Seller {
