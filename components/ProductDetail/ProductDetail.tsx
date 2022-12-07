@@ -1,11 +1,11 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "../stores";
+import { RootState } from "../../stores";
 import { RiSecurePaymentLine } from "react-icons/ri";
 import styled from "styled-components";
 
 import styles from "./ProductDetail.module.css";
-import { Product, Tag } from "../types/Product";
+import { Product, Tag } from "../../types/Product";
 
 import { Modal } from "react-bootstrap";
 import Button from "react-bootstrap/Button";

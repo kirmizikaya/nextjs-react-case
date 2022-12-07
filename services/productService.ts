@@ -1,4 +1,4 @@
-import http from "./http-common";
+import http from "./httpCommon";
 import { Product } from "../types/Product";
  
 const getProduct = () => {

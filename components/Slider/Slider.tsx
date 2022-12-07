@@ -1,6 +1,6 @@
 import React, { useState, useEffect, ChangeEvent } from "react";
 import { useSelector } from "react-redux";
-import { RootState } from "../stores";
+import { RootState } from "../../stores";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import Image from "react-bootstrap/Image";

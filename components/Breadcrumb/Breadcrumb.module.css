@@ -8,6 +8,10 @@
    cursor: pointer;
 }
 
+.slideIcons{
+  opacity: 0.3;
+  margin-left: 5px;
+}
 
 .bcumbSliderItem .b_item_home {
   flex: 0 0 auto;

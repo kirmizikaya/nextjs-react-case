@@ -1,21 +1,19 @@
-import Head from "next/head";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import ProductService from "../services/productService";
 import { RootState } from "../stores";
 import { setLoading, setResponseData } from "../stores/productSlice";
-import styles from "../styles/Home.module.css";
 import { Product } from "../types/Product";
+//bootsrap
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
-import Spinner from "react-bootstrap/Spinner";
 import Col from "react-bootstrap/Col";
-import Loading from "../components/Loading";
-import Slider from "../components/Slider";
-import Breadcrumb from "../components/Breadcrumb";
-import ProductDetail from "../components/ProductDetail";
+//components
+import Loading from "../components/Loading/Loading";
+import Slider from "../components/Slider/Slider";
+import Breadcrumb from "../components/Breadcrumb/Breadcrumb";
+import ProductDetail from "../components/ProductDetail/ProductDetail";
 
 export default function Home() {
   const [product, setProduct] = useState<Product>();
