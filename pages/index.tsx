@@ -40,7 +40,7 @@ export default function Home() {
 
 
   return (
-    <Container className="mt-5 ">
+    <Container className="mt-md-5 mt-3">
       {!loading && (
         <div className="d-flex justify-content-center align-items-center">
           <Loading />
